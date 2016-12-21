@@ -1,0 +1,31 @@
+
+tableau = {3,25,1,6,23,56}
+
+function permutation(tab,index){
+    var temp = tab [index];
+    tab[index] = tab [index+1]
+    tab[index+1] = temp;
+    return true;
+
+}
+
+    var sorted = false;
+
+            tantque (sorted == false){
+                var moved = false;
+                var i = 0;
+                tantque (i < tableau.lenght - 1){
+                    si (tableau[i+1] < tableau[i])
+                        alors
+                            moved = permutation(tableau,i);
+
+                    finsi
+                    i++ ;
+
+                fintantque
+
+                si (moved == false)
+                    alors
+                        sorted = true;
+
+            }
